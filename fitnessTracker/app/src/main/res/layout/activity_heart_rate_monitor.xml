@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:padding="20dp"-->
+    <!--tools:context="com.mudrita.cmpe277.heartratemonitor.HeartRateMonitor">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="@string/default_text"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Large">-->
+
+    <!--</TextView>-->
+
+    <!--<SurfaceView-->
+        <!--android:id="@+id/preview"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@+id/text"-->
+        <!--android:layout_marginTop="20dp">-->
+        <!--&lt;!&ndash;android:layout_weight="1">&ndash;&gt;-->
+
+    <!--</SurfaceView>-->
+
+    <!--&lt;!&ndash;<ProgressBar&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/progressBar"&ndash;&gt;-->
+        <!--&lt;!&ndash;style="?android:attr/progressBarStyle"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignBottom="@+id/preview"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerHorizontal="true" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ProgressBar&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/progressBar"&ndash;&gt;-->
+        <!--&lt;!&ndash;style="?android:attr/progressBarStyleHorizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="150dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="150dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignParentBottom="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_below="@+id/preview"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:max="500"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:progress="0"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:progressDrawable="@drawable/circular" />&ndash;&gt;-->
+
+
+<!--</RelativeLayout>-->
+
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/layout"
+    android:padding="50dp"
+    android:background="@drawable/app2bkgrnd">
+<LinearLayout android:id="@+id/top"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp">
+    <TextView android:id="@+id/text"
+        android:text="@string/default_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light">
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+</LinearLayout>
+
+<SurfaceView android:id="@+id/preview"
+    android:layout_weight="1"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp">
+
+
+</SurfaceView>
+
+
+
+</LinearLayout>
+
+
+
+
+

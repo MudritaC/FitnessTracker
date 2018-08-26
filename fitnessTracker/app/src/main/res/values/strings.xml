@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fitness tracker</string>
+    <string name="instructionText">Place your index finger lightly on the rear camera so that it fully coveres the camera. Hold until measurements are complete.</string>
+    <string name="default_text">--</string>
+    <string-array name="weight_unit">
+        <item>kg</item>
+        <item>lb</item>
+    </string-array>
+    <string-array name="height_unit">
+        <item>meter</item>
+        <item>inches</item>
+    </string-array>
+</resources>

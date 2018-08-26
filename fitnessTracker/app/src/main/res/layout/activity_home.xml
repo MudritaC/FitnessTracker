@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:paddingTop="60dp"
+    android:background="@drawable/app2bkgrnd"
+    tools:context="com.mudrita.cmpe277.heartratemonitor.HomeActivity">
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Enter Height:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:text="50"
+        android:layout_marginLeft="20dp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/heightText"
+        android:layout_toEndOf="@+id/heightText"
+        android:background="@android:color/background_light"/>
+
+    <Spinner
+        android:id="@+id/heightSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/height_unit"
+        android:layout_alignBaseline="@+id/heightText"
+        android:layout_toEndOf="@+id/heightEditText"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:id="@+id/weightText"
+        android:text="Enter Weight:"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/heightText"
+        android:layout_alignLeft="@+id/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:text="150"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/weightText"
+        android:layout_alignRight="@+id/heightEditText"
+        android:background="@android:color/background_light"/>
+
+    <Spinner
+        android:id="@+id/weightSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/weight_unit"
+        android:layout_alignBaseline="@+id/weightText"
+        android:layout_toEndOf="@+id/weightEditText"
+        android:layout_alignRight="@+id/heightSpinner"
+        />
+
+    <Button
+        android:id="@+id/buttonBMI"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#FF4A2773"
+        android:onClick="calculateBMI"
+        android:text="  Calculate BMI  "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/buttonHeartRate"
+        android:text="  Calculate Heart Rate  "
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBMI"
+        android:layout_centerHorizontal="true"
+        android:background="#FF4A2773"
+        android:onClick="calculateHeartRate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonPedeometer"
+        android:text="  Step Counter  "
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonHeartRate"
+        android:layout_centerHorizontal="true"
+        android:background="#FF4A2773"
+        android:onClick="calculatesteps"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bmiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonPedeometer"
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/bmiCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmiText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColorLink="@android:color/background_light"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+
+
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="com.mudrita.cmpe277.heartratemonitor.HomeActivity">-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
