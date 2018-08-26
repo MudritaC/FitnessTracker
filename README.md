@@ -10,7 +10,7 @@
 * Lastly the app can be used to monitor your physical activities by counting number of steps that you take each day and based on that it calculates the calories that you have burnt while walking.
 
 ## Calculate BMI:
-![alt text](screenshots/BMICalculator.jpeg){:height="50%" width="50%"}
+![alt text](screenshots/BMICalculator.jpeg "Class diagram")
 
 ## Calculate Heart Rate: 
 ![alt text](screenshots/Instruction.jpeg "Sequence diagram")
